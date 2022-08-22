@@ -46,7 +46,7 @@ body{
     left: 10px;
     top: -70px;
     position: absolute;
-    background: linear-gradient(#1CD6CE,#D61C4E);
+    background: linear-gradient(#444,#444);
     animation: animate 5s linear infinite;
 
 }
