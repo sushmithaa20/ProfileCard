@@ -21,10 +21,53 @@ body{
     background: #fff;
     border-radius: 28px;
     background: linear-gradient(#50C878,#50C878 45%,#fff,#fff 100%);
-    top: 60px;
+    /* top: 60px; */
     backdrop-filter: blur(15px);
+    /* overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.card1{
+    top: 60px;
+    position: relative;
+    width: 320px;
+    height: 440px;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card1::before{
+    content:'';
+    width: 200px;
+    height: 600px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(#1CD6CE,#D61C4E);
+    animation: animate 5s linear infinite;
+
+}
+@keyframes animate{
+    0% {
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card1::after::after{
+    content:'';
+    position: absolute;
+    /* background: #191919; */
+    inset: 15px;
+    border-radius: 5px;
+}
+
 .img-box{
     position: absolute;
     top: 30px;
